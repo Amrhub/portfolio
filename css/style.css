@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-html {
-  background-image: url('/images/portfoltiobg.png');
-}
+
 body {
   min-height: 100vh;
   margin: 0;
-
+  background: #191765;
+  background-image: url('/images/portfoltiobg1.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   color: #c8c8d4;
   font-family: Roboto, 'sans serif';
   line-height: 24px;
@@ -13,7 +15,6 @@ body {
 }
 img {
   position: absolute;
-  background: #191765;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -27,6 +28,7 @@ img {
   width: 370px;
   align-self: center;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -34,7 +36,8 @@ img {
   margin-bottom: 40px;
 }
 /* Name displayed at header */
-.header span {
+.header a {
+  text-decoration: none;
   font-size: 18;
   font-weight: 500;
   line-height: 16px;
@@ -49,19 +52,19 @@ img {
   align-items: center;
 }
 .headline-section .myName {
+  margin: 0;
   font-weight: bold;
   font-size: 48px;
   line-height: 72px;
   letter-spacing: 0.37px;
   color: #7d73fc;
-  margin-bottom: 10px;
 }
 .headline-section .role {
+  margin: 20px 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   color: #edecff;
-  margin-bottom: 30px;
 }
 .self-intro {
   text-align: center;
