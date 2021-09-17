@@ -4,10 +4,7 @@ body {
   min-height: 100vh;
   margin: 0;
   background: #191765;
-  background-image: url('/images/portfoltiobg1.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+
   color: #c8c8d4;
   font-family: Roboto, 'sans serif';
   line-height: 24px;
@@ -20,6 +17,9 @@ img {
   z-index: -1;
 }
 .wrapper {
+  background-image: url('/images/portfoltiobg1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   padding: 20px 40px;
