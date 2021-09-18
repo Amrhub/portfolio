@@ -291,7 +291,7 @@ img {
 }
 
 .See-Project button:hover {
-  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .See-Project button:active {
@@ -303,5 +303,5 @@ img {
 }
 
 .See-Project button[disabled]:hover {
-  box-shadow: 0px 0px 0px;
+  box-shadow: none;
 }
