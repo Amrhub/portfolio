@@ -21,8 +21,9 @@ img {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template:  auto 100px  auto / 100%
+
 }
 
 .top-container {
@@ -137,9 +138,11 @@ img {
   display: flex;
   margin: 40px 0;
   justify-content: center;
+  list-style: none;
+
 }
 
-.links a {
+.links li {
   flex: 0 1 40px;
 }
 
@@ -172,31 +175,30 @@ img {
 }
 
 .My-recent-work {
+  grid-row: 1/2;
   font-size: 40px;
   line-height: 52px;
   color: #9490ff;
   text-transform: uppercase;
   font-style: normal;
+  width: fit-content;
+  justify-self: center;
 }
 
 .work-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px 600px 600px 600px;
   background-image: url('/images/work_sectionbg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .project {
-  grid-row: 1/2;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.p2 {
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
@@ -204,8 +206,16 @@ img {
   align-items: center;
 }
 
-.p3 {
+.p2 {
   grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.p3 {
+  grid-row: 4/5;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -214,7 +224,7 @@ img {
 
 .project > * {
   align-content: center;
-  width: var(--wrapper-width);
+  width: 100%;
 }
 
 .project-picture {
@@ -282,15 +292,16 @@ img {
 }
 
 .See-Project button {
-  width: 90px;
+  width: 100px;
   height: 50px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background: #7d73fc;
   color: #edecff;
   align-self: flex-start;
 }
 
 .See-Project button:hover {
+  cursor: pointer;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
