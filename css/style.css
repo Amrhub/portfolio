@@ -22,8 +22,7 @@ img {
 
 .wrapper {
   display: grid;
-  grid-template:  auto 100px  auto / 100%
-
+  grid-template: auto 100px auto / 100%;
 }
 
 .top-container {
@@ -139,7 +138,6 @@ img {
   margin: 40px 0;
   justify-content: center;
   list-style: none;
-
 }
 
 .links li {
@@ -194,8 +192,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .project {
