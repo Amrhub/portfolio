@@ -4,6 +4,7 @@
 :root {
   --wrapper-width: 400px;
 }
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -11,17 +12,20 @@ body {
   color: #c8c8d4;
   font-family: Roboto, 'sans serif';
   line-height: 24px;
-  font-size: 15;
+  font-size: 15px;
 }
+
 img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
 }
+
 .top-container {
   display: flex;
   flex-direction: column;
@@ -32,6 +36,7 @@ img {
   background-position: center;
   height: max-content;
 }
+
 .wrapper > * {
   width: var(--wrapper-width);
   align-self: center;
@@ -44,6 +49,7 @@ img {
   padding: 20px 0;
   margin-bottom: 40px;
 }
+
 /* Name displayed at header */
 .header a {
   text-decoration: none;
@@ -52,14 +58,17 @@ img {
   line-height: 16px;
   color: white;
 }
+
 .hamburger-menu:hover {
   cursor: pointer;
 }
+
 .headline-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .headline-section .myName {
   margin: 0;
   font-weight: bold;
@@ -68,6 +77,7 @@ img {
   letter-spacing: 0.37px;
   color: #7d73fc;
 }
+
 .headline-section .role {
   margin: 20px 0;
   font-weight: 500;
@@ -75,20 +85,24 @@ img {
   line-height: 44px;
   color: #edecff;
 }
+
 .self-intro {
   text-align: center;
   padding-bottom: 30px;
   border-bottom: 1px solid #646369;
 }
+
 .About-Me {
   display: flex;
   flex-wrap: wrap;
   padding: 30px 0;
   border-bottom: 1px solid #646369;
 }
+
 .About-Me > * {
   flex: 1 1 140px;
 }
+
 .soft-skills {
   flex: 1 1 160px;
   display: flex;
@@ -96,6 +110,7 @@ img {
   flex-direction: column;
   padding-left: 10px;
 }
+
 .soft-skills__header {
   margin: 0 0 10px;
   display: inline-block;
@@ -105,35 +120,42 @@ img {
   font-weight: 500;
   letter-spacing: 0.03em;
 }
+
 .skills {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .skills li {
   font-size: 15px;
   font-style: normal;
   line-height: 24px;
   color: #f5f5ff;
 }
+
 .links {
   display: flex;
   margin: 40px 0;
   justify-content: center;
 }
+
 .links a {
   flex: 0 1 40px;
 }
+
 .links img {
   background: transparent;
   width: 30px;
   height: 30px;
 }
+
 .guider {
   width: 100%;
   display: flex;
   justify-content: center;
 }
+
 .guider span {
   position: relative;
   font-family: Roboto;
@@ -142,12 +164,14 @@ img {
   font-size: 20px;
   line-height: 32px;
 }
+
 .guider span::before {
   content: url('/images/arrow_down.png');
   margin-right: 10px;
   position: absolute;
   transform: translate(-1.7rem, 0.2rem);
 }
+
 .My-recent-work {
   font-size: 40px;
   line-height: 52px;
@@ -155,14 +179,16 @@ img {
   text-transform: uppercase;
   font-style: normal;
 }
+
 .work-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: (5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   background-image: url('/images/work_sectionbg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .project {
   grid-row: 1/2;
   display: flex;
@@ -170,6 +196,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .p2 {
   grid-row: 2/3;
   display: flex;
@@ -177,6 +204,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .p3 {
   grid-row: 3/4;
   display: flex;
@@ -189,6 +217,7 @@ img {
   align-content: center;
   width: var(--wrapper-width);
 }
+
 .project-picture {
   display: flex;
   align-content: flex-start;
@@ -196,19 +225,23 @@ img {
   height: 200px;
   justify-content: center;
 }
+
 .project img {
   margin-top: 20px;
   width: calc(var(--wrapper-width) - 50px);
   height: calc(200px - 20px);
 }
+
 .project-body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .project-body > * {
   width: calc(var(--wrapper-width) - 50px);
 }
+
 .project h3 {
   justify-self: center;
   margin: 15px 0 0;
@@ -218,6 +251,7 @@ img {
   color: white;
   font-weight: 500;
 }
+
 .project p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -226,6 +260,7 @@ img {
   line-height: 28px;
   color: #dcdce8;
 }
+
 .project .table {
   display: flex;
   align-items: center;
@@ -246,23 +281,28 @@ img {
   width: calc(var(--wrapper-width) - 50px);
   padding-top: 20px;
 }
+
 .See-Project button {
   width: 90px;
   height: 50px;
-  padding: 10 20px;
+  padding: 10px 20px;
   background: #7d73fc;
   color: #edecff;
   align-self: flex-start;
 }
+
 .See-Project button:hover {
   box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
 }
+
 .See-Project button:active {
   background: #5e42d7;
 }
+
 .See-Project button[disabled] {
   background-color: #2a2b33;
 }
+
 .See-Project button[disabled]:hover {
   box-shadow: 0 0 0;
 }
