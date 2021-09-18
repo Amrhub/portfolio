@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio setup & mobile version skeleton
+# Portfolio: mobile version
 
-> Portfolio: setup and mobile version skeleton
+> Portfolio: mobile version
 
 ![screenshot](./app_screenshot.png)
 
-This project is a mobile version skeleton for header & headline of the portfolio.
+This project is a mobile version for About-Me & Works sections of the portfolio.
 
 ## Built With
 
