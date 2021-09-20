@@ -166,7 +166,7 @@ img {
 }
 
 .guider span::before {
-  content: url('/images/arrow_down.png');
+  content: url('images/arrow_down.png');
   margin-right: 10px;
   position: absolute;
   transform: translate(-1.7rem, 0.2rem);
