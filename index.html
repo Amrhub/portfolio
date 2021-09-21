@@ -100,7 +100,7 @@
             <span>Work</span>
         </div>
         <section class="work-container">
-            <h1 class="My-recent-work">
+            <h1 class="Section-title">
                 my recent work
             </h1>
             <section class="project">
@@ -123,7 +123,7 @@
                         <span class="last-child">Ruby</span>
                     </div>
                     <div class="See-Project">
-                        <button>
+                        <button class="btn-primary">
                             See Project
                         </button>
                     </div>
@@ -150,7 +150,7 @@
                         <span class="last-child">Ruby</span>
                     </div>
                     <div class="See-Project">
-                        <button>
+                        <button class="btn-primary">
                             See Project
                         </button>
                     </div>
@@ -177,14 +177,35 @@
                         <span class="last-child">Ruby</span>
                     </div>
                     <div class="See-Project">
-                        <button>
+                        <button class="btn-primary">
                             See Project
                         </button>
                     </div>
                 </div>
             </section>
-
         </section>
+
+        <footer class="footer">
+            <section class="Contact-us">
+                    <h1 class="Section-title">
+                        CONTACT US
+                    </h1>
+                    <p>
+                        If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
+                    </p>
+                    <form class="Contact-us__Form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="#" method="post">
+                        <fieldset id="fs-frm-inputs">
+                          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                          <textarea rows="5" name="message" id="message" placeholder="Enter your message..." required=""></textarea>
+                          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                        </fieldset>
+                        <div class="submit-container">
+                            <input class="btn-primary" type="submit" value="Submit">
+                        </div>
+                      </form>
+            </section>
+        </footer>
     </div>
     <script src="https://kit.fontawesome.com/2d686771bc.js" crossorigin="anonymous"></script>
 </body>
