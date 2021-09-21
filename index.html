@@ -193,11 +193,11 @@
                     <p>
                         If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
                     </p>
-                    <form class="Contact-us__Form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="#" method="post">
+                    <form class="Contact-us__Form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
                         <fieldset id="fs-frm-inputs">
-                          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                          <input type="text" name="name" id="full-name" placeholder="First and Last" required="" maxlength="30">
                           <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-                          <textarea rows="5" name="message" id="message" placeholder="Enter your message..." required=""></textarea>
+                          <textarea rows="5" name="message" id="message" placeholder="Enter your message..." required="" maxlength="500"></textarea>
                           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                         </fieldset>
                         <div class="submit-container">
