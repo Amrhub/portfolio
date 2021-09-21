@@ -165,11 +165,10 @@ img {
   line-height: 32px;
 }
 
-.guider span::before {
-  content: url('images/arrow_down.png');
-  margin-right: 10px;
-  position: absolute;
-  transform: translate(-1.7rem, 0.2rem);
+.guider img {
+  width: 20px;
+  height: 20px;
+  transform: translate(-2.5rem, 0.3rem);
 }
 
 .My-recent-work {
