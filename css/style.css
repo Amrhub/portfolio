@@ -84,6 +84,7 @@ body {
 .top-container > * {
   max-width: 500px;
 }
+
 .headline-section {
   display: flex;
   flex-direction: column;
@@ -377,6 +378,7 @@ body {
   height: 400px;
   padding: 0 10%;
 }
+
 .Contact-us__Form fieldset {
   display: flex;
   flex-direction: column;
