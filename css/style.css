@@ -331,11 +331,13 @@ body {
   background: #7d73fc;
   color: var(--secondary-color);
   align-self: flex-start;
+  transition: transform 1s ease-in;
 }
 
 .btn-primary:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  transform: scale(1.1);
 }
 
 .btn-primary:active {
@@ -401,6 +403,11 @@ body {
   padding: 15px 16px;
   color: var(--primary-color);
   margin: 15px 0;
+  transition: padding-left, 1s, ease-in;
+}
+
+.Contact-us__Form fieldset > *:hover {
+  padding-left: calc(16px + 5px);
 }
 
 .Contact-us__Form fieldset > *::placeholder {
