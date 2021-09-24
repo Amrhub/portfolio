@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: mobile version - Contact form
+# Portfolio: Desktop version
 
-> Portfolio: mobile version - Contact form
+> Portfolio: Desktop version
 
 ![screenshot](./app_screenshot.png)
 
-This project is a mobile version added contat form
+This project is a Desktop version
 
 ## Built With
 
@@ -36,7 +36,6 @@ To run the project open folder (after extraction) then run index.html
 - GitHub: [@Amrhub](https://github.com/Amrhub/)
 - LinkedIn: [Amr Ahmed](https://www.linkedin.com/in/amr-ahmed-655420191/)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -50,14 +49,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse helped/guided me building this project
-
-- Contributed
-
-👤 **Alejandro Ramos**
-
-- GitHub: [@githubhandle](https://github.com/AlexRS90)
-- Twitter: [@twitterhandle](https://twitter.com/AlejandroRBenji)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alejandro-ramos-santos-9b0b52135/)
 
 ## 📝 License
 
