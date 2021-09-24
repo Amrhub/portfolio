@@ -61,7 +61,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template: auto 150px auto auto / 100%;
+  grid-template: auto 150px auto auto/ 100%;
 }
 
 .portfolio {
@@ -98,6 +98,7 @@ body {
   line-height: 72px;
   letter-spacing: 0.37px;
   color: #7d73fc;
+  text-align: center;
 }
 
 .headline-section .role {
@@ -106,6 +107,7 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: var(--secondary-color);
+  text-align: center;
 }
 
 .self-intro {
@@ -221,10 +223,10 @@ body {
   display: grid;
   width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 80px 600px 600px 600px;
-  background-image: url('/images/work_sectionbg.svg');
+  grid-template-rows: 80px 600px 600px 600px 600px;
+  background-image: url('/images/work_sectionbg.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   min-height: 100vh;
 }
 
@@ -246,6 +248,10 @@ body {
 
 .p3 {
   grid-row: 4/5;
+}
+
+.p4 {
+  grid-row: 5/6;
 }
 
 .project > * {
@@ -345,19 +351,20 @@ body {
 }
 
 .footer {
+  display: flex;
   grid-row: 4 / 5;
   width: 100%;
   margin-top: 120px;
   margin-bottom: 71px;
-  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Contact-us {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 648px;
+  max-width: 650px;
   padding: 20px 0;
 }
 
@@ -393,6 +400,7 @@ body {
   font-family: 'Inter', sans-serif;
   padding: 15px 16px;
   color: var(--primary-color);
+  margin: 15px 0;
 }
 
 .Contact-us__Form fieldset > *::placeholder {
@@ -411,6 +419,36 @@ body {
   font-weight: 500;
   color: var(--secondary-color);
   width: 100%;
+}
+
+.footer-foot-container {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #3a3837;
+  width: 100%;
+}
+
+.footer-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  padding-top: 20px;
+}
+
+.footer-foot .links {
+  margin: 0;
+}
+
+.footer-foot a {
+  text-decoration: none;
+  color: #ebebff;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 1024px) {
@@ -462,7 +500,8 @@ body {
     order: -1;
   }
 
-  .p2 .project-picture {
+  .p2 .project-picture,
+  .p4 .project-picture {
     order: 1;
   }
 
@@ -496,5 +535,11 @@ body {
   .See-Project {
     padding: 20px 0 0;
     justify-self: flex-end;
+  }
+
+  .footer-foot {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
   }
 }
