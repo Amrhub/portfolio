@@ -469,7 +469,7 @@ body {
   }
 
   .portfolio {
-    background-image: url('/images/headline_section_bg.svg');
+    background-image: url('images/headline_section_bg.svg');
     background-size: contain;
   }
 
