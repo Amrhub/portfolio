@@ -14,7 +14,7 @@ This project is a Desktop version
 
 ## Live Demo
 
-[Portfolio setup & mobile version skeleton!](https://amrhub.github.io/myPortfolio/)
+[Portfolio Web Page](https://amrhub.github.io/myPortfolio/)
 
 ## Getting Started
 
