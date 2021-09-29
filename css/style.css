@@ -328,16 +328,16 @@ body {
   width: 100px;
   height: 50px;
   padding: 10px 10px;
-  background: #7d73fc;
-  color: var(--secondary-color);
+  background: #9390FF;
+  color: black;
   align-self: flex-start;
-  transition: transform 1s ease-in;
+  transition: transform 300ms ease-in;
 }
 
 .btn-primary:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .btn-primary:active {
@@ -549,4 +549,18 @@ body {
     justify-content: space-around;
     width: 500px;
   }
+}
+
+@media screen and (max-width: 340px) {
+  :root{
+    --wrapper-width: 290px;
+  }
+  .work-container {
+    grid-template-rows: 80px repeat(4,auto);
+  }
+
+  .work-container .Section-title{
+      font-size: 30px;
+  }
+  
 }
