@@ -328,7 +328,7 @@ body {
   width: 100px;
   height: 50px;
   padding: 10px 10px;
-  background: #9390FF;
+  background: #9390ff;
   color: black;
   align-self: flex-start;
   transition: transform 300ms ease-in;
@@ -552,15 +552,15 @@ body {
 }
 
 @media screen and (max-width: 340px) {
-  :root{
+  :root {
     --wrapper-width: 290px;
   }
+
   .work-container {
-    grid-template-rows: 80px repeat(4,auto);
+    grid-template-rows: 80px repeat(4, auto);
   }
 
-  .work-container .Section-title{
-      font-size: 30px;
+  .work-container .Section-title {
+    font-size: 30px;
   }
-  
 }
