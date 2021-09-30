@@ -65,7 +65,7 @@ body {
 }
 
 .portfolio {
-  background-image: url('images/headline_section_bg.png');
+  background-image: url('../images/headline_section_bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -224,7 +224,7 @@ body {
   width: 100%;
   grid-template-columns: 100%;
   grid-template-rows: 80px 600px 600px 600px 600px;
-  background-image: url('images/work_sectionbg.png');
+  background-image: url('../images/work_sectionbg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 100vh;
@@ -476,7 +476,7 @@ body {
   }
 
   .portfolio {
-    background-image: url('images/headline_section_bg.svg');
+    background-image: url('../images/headline_section_bg.svg');
     background-size: contain;
   }
 
