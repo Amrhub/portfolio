@@ -47,6 +47,40 @@ body {
   cursor: pointer;
 }
 
+.linksWrapper {
+  display: none;
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #191765;
+  background-image: url("../images/mobile-menu-bg.png");
+  padding: 2.5rem;
+}
+
+.linksWrapper img {
+  float: right;
+  margin-bottom: 1rem;
+}
+
+.linksWrapper ul {
+  list-style: none;
+  clear: right;
+  width: 90%;
+}
+
+.linksWrapper ul li {
+  margin: 0 0 2rem;
+}
+
+.linksWrapper a {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 32px;
+}
+
 .desktop-menu {
   display: none;
   width: 300px;
@@ -147,7 +181,7 @@ body {
   margin: 0;
 }
 
-.skills li {
+.skills ul li {
   font-size: 15px;
   font-style: normal;
   line-height: 24px;
@@ -171,7 +205,7 @@ body {
   list-style: none;
 }
 
-.links li {
+.links ul li {
   flex: 0 1 40px;
 }
 
