@@ -336,14 +336,14 @@ body {
   color: #dcdce8;
 }
 
-.project .table {
+.table {
   display: flex;
   align-items: center;
   height: 40px;
   margin: 10px 0;
 }
 
-.project .table span {
+.project .table > * {
   flex-grow: 1;
   text-align: center;
   border-right: 1px #555 solid;
