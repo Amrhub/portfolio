@@ -471,6 +471,23 @@ body {
   width: 100%;
 }
 
+.no-error {
+  /* display: ; */
+  color: #ff4747 !important;
+  font-weight: normal !important;
+  font-size: small !important;
+  padding: 0 0 0 10px !important;
+  margin: 0 !important;
+}
+
+.valid {
+  outline: 3px green solid;
+}
+
+.invalid {
+  outline: 3px rgb(214, 52, 52) solid;
+}
+
 .footer-foot-container {
   display: flex;
   justify-content: center;
