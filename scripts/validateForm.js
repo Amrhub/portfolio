@@ -30,6 +30,8 @@ form.addEventListener('submit', (e) => {
   }
   if (!emailRegex.test(email.value)) {
     emailError.textContent = 'Invalid Email address format ';
+  } else if (email.value !== email.value.toLowerCase()) {
+    emailError.textContent = 'Email address should be in lowercase';
   } else {
     emailError.textContent = '';
   }
