@@ -60,8 +60,18 @@ function hideProject(prevProject) {
 
 // eslint-disable-next-line no-unused-vars
 function displayProject(projectIndex) {
-  if (document.getElementById('projectWindow')) {
-    document.getElementById('projectWindow').remove();
+  const prevWindow = document.getElementById('projectWindow');
+  if (prevWindow) {
+    prevWindow.parentElement.querySelector('.project-picture').style.filter =
+      'blur(0)';
+    prevWindow.parentElement.querySelector('.project-body').style.filter =
+      'blur(0)';
+    if (prevWindow.parentElement.nextSibling) {
+      prevWindow.parentElement.nextSibling.querySelector(
+        '.project-picture'
+      ).style.filter = 'blur(0)';
+    }
+    prevWindow.remove();
   }
 
   // eslint-disable-next-line vars-on-top
@@ -110,6 +120,7 @@ function displayProject(projectIndex) {
       projectBtnWrapper.style.flexDirection = 'column';
     }
   }
+
   currentProject.querySelector('.project-picture').style.filter = 'blur(12px)';
   currentProject.querySelector('.project-body').style.filter = 'blur(12px)';
   if (currentProject.nextSibling) {
