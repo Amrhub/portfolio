@@ -10,7 +10,7 @@
 }
 
 :root {
-  --wrapper-width: 400px;
+  --wrapper-width: 90%;
   --primary-color: #191765;
   --secondary-color: #edecff;
   --containers-side-padding: 30px;
@@ -257,11 +257,15 @@ body {
   display: grid;
   width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 80px 600px 600px 600px 600px;
+  grid-gap: 1rem;
   background-image: url('../images/work_sectionbg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 100vh;
+}
+
+.work-container > * {
+  position: relative;
 }
 
 .work-container .Section-title {
@@ -269,11 +273,14 @@ body {
 }
 
 .project {
-  grid-row: 2/3;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.p1 {
+  grid-row: 2/3;
 }
 
 .p2 {
@@ -297,14 +304,14 @@ body {
   display: flex;
   align-content: flex-start;
   width: var(--wrapper-width);
-  height: 200px;
+  height: auto;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .project img {
-  margin-top: 20px;
-  width: calc(var(--wrapper-width) - 50px);
-  height: calc(200px - 20px);
+  width: var(--wrapper-width);
+  height: 100%;
 }
 
 .project-body {
@@ -317,7 +324,7 @@ body {
   width: calc(var(--wrapper-width) - 50px);
 }
 
-.project h3 {
+.project .Project-title {
   justify-self: center;
   margin: 15px 0;
   padding: 0;
@@ -325,6 +332,7 @@ body {
   line-height: 44px;
   color: white;
   font-weight: 500;
+  text-align: center;
 }
 
 .project p {
@@ -334,28 +342,39 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #dcdce8;
+  text-align: center;
 }
 
-.project .table {
+.technologies {
   display: flex;
   align-items: center;
   height: 40px;
-  margin: 10px 0;
+  margin: 20px 0;
+  list-style: none;
 }
 
-.project .table span {
+.Contact-us__Form fieldset > * {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  padding: 15px 16px;
+  color: var(--primary-color);
+  margin: 15px 0;
+  transition: padding-left, 1s, ease-in;
+}
+
+.project .technologies > * {
   flex-grow: 1;
   text-align: center;
   border-right: 1px #555 solid;
 }
 
-.last-child {
-  border-right: hidden !important;
+.technologies li:last-child {
+  border-right: hidden;
 }
 
 .See-Project {
   width: calc(var(--wrapper-width) - 50px);
-  padding: 20px 0;
 }
 
 .btn-primary {
@@ -430,16 +449,6 @@ body {
   height: 300px;
 }
 
-.Contact-us__Form fieldset > * {
-  font-size: 15px;
-  font-weight: 400;
-  font-family: 'Inter', sans-serif;
-  padding: 15px 16px;
-  color: var(--primary-color);
-  margin: 15px 0;
-  transition: padding-left, 1s, ease-in;
-}
-
 .Contact-us__Form fieldset > *:hover {
   padding-left: calc(16px + 5px);
 }
@@ -493,6 +502,10 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .work-container {
+    grid-gap: 5rem;
+  }
+
   .header-container {
     position: sticky;
     top: 0;
@@ -537,7 +550,7 @@ body {
   .project-picture {
     width: 45%;
     margin: 0;
-    height: 357px;
+    height: 100%;
     order: -1;
   }
 
@@ -546,9 +559,16 @@ body {
     order: 1;
   }
 
+  .project-body .Project-title {
+    text-align: left;
+  }
+
+  .project p {
+    text-align: left;
+  }
+
   .project img {
     width: 100%;
-    height: 357px;
     margin: 0;
   }
 
@@ -560,14 +580,15 @@ body {
     width: 45%;
     justify-content: space-between;
     padding: 0 30px;
-    height: 357px;
+    height: 100%;
   }
 
   .project-body > * {
     width: 100%;
+    margin: 0;
   }
 
-  .project-body .table {
+  .project-body .technologies {
     width: 50%;
     align-self: flex-start;
     text-transform: capitalize;
