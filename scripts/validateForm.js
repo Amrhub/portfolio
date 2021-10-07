@@ -1,7 +1,5 @@
 /* eslint-disable operator-linebreak */
 const form = document.getElementById('fs-frm');
-
-// const form =
 form.addEventListener('submit', (e) => {
   const fullName = form.elements['full-name'];
   const email = form.elements['email-address'];
@@ -12,7 +10,6 @@ form.addEventListener('submit', (e) => {
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const numRegex = /['1''2''0''3''4''5''6''7''8''9'\W]+/;
   const fullNameTest = fullName.value.split(' ');
-
   // VALIDATION CHECK
   if (fullNameTest.length === 1) {
     fullNameError.textContent =
