@@ -150,8 +150,13 @@
                     </p>
                     <form class="Contact-us__Form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdoybpyk" method="post">
                         <fieldset id="fs-frm-inputs">
+                            <label for="full-name" hidden>Full Name</label>
                             <input type="text" name="name" id="full-name" placeholder="First and Last" required="" maxlength="30">
+                            <small class="no-error"></small>
+                            <label for="email-address" hidden>Email Address</label>
                             <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                            <small class="no-error"></small>
+                            <label for="message" hidden>Message</label>
                             <textarea rows="5" name="message" id="message" placeholder="Enter your message..." required="" maxlength="500"></textarea>
                             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                         </fieldset>
@@ -199,6 +204,7 @@
     <script src="https://kit.fontawesome.com/2d686771bc.js" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/projectPopUpWindow.js"></script>
+    <script src="scripts/validateForm.js"></script>
 </body>
 
 </html>

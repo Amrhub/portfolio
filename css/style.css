@@ -446,7 +446,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 300px;
+  height: max-content;
 }
 
 .Contact-us__Form fieldset > *:hover {
@@ -469,6 +469,23 @@ body {
   font-weight: 500;
   color: var(--secondary-color);
   width: 100%;
+}
+
+.no-error {
+  /* display: ; */
+  color: #ff4747 !important;
+  font-weight: normal !important;
+  font-size: small !important;
+  padding: 0 0 0 10px !important;
+  margin: 0 !important;
+}
+
+.valid {
+  outline: 3px green solid;
+}
+
+.invalid {
+  outline: 3px rgb(214, 52, 52) solid;
 }
 
 .footer-foot-container {
