@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
   const emailRegex =
     // eslint-disable-next-line no-useless-escape
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  const numRegex = /['1''2''0''3''4''5''6''7''8''9']+/;
+  const numRegex = /['1''2''0''3''4''5''6''7''8''9'\W]+/;
   const fullNameTest = fullName.value.split(' ');
 
   // VALIDATION CHECK
@@ -20,7 +20,8 @@ form.addEventListener('submit', (e) => {
   } else {
     for (let i = 0; i < fullNameTest.length; i += 1) {
       if (numRegex.test(fullNameTest[i])) {
-        fullNameError.textContent = 'Name field should not contain any numbers';
+        fullNameError.textContent =
+          'Name field must consists of alphabets and space only';
         break;
       } else {
         fullNameError.textContent = '';
