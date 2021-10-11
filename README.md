@@ -10,7 +10,7 @@ This project is a Desktop version
 
 ## Built With
 
-- HTML & CSS
+- HTML, CSS, and JavaScript
 
 ## Live Demo
 
