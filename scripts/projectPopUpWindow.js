@@ -2,14 +2,16 @@
 /* eslint-disable comma-dangle */
 const projects = [
   {
-    name: 'Multi-Post Stories',
+    name: 'Microverse Program',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    featuredImageSource: 'images/ImgPlaceholder.png',
+      'A program to get you started on Full-Stack web development with Technical and Soft skills required, This program create positive changes on their alumni, You can join the course wherever you are.',
+    featuredImageSource: 'images/project1.png',
     featuredImageAlt: 'Project image',
-    technology: ['css', 'html', 'bootstrap', 'Ruby'],
-    demoLive: '',
-    sourceLink: 'https://github.com/Amrhub/myPortfolio',
+    technology: ['CSS', 'HTML', 'JavaScript'],
+    demoLive:
+      'https://amrhub.github.io/Module1-Capstone-Web-development-course/',
+    sourceLink:
+      'https://github.com/Amrhub/Module1-Capstone-Web-development-course',
   },
   {
     name: 'Multi-Post Stories',
@@ -135,8 +137,16 @@ function displayProject(projectIndex) {
   const projectTechnologyItems = Array.from(projectTechnology.children);
   projectBtnGoLive.innerHTML =
     'See Live <img src="images/Icons/see-live.png" alt="external link icon">';
+  projectBtnGoLive.href = `${projects[projectIndex].demoLive}`;
   projectBtnSeeSrc.innerHTML =
     'See Source <img src="images/Icons/GitHub-icon.png" alt="external link icon">';
+  projectBtnSeeSrc.href = `${projects[projectIndex].sourceLink}`;
+  projectBtnSeeSrc.setAttribute('target', '_blank');
+  projectBtnSeeSrc.setAttribute('rel', 'noopener');
+  projectBtnGoLive.setAttribute('target', '_blank');
+  projectBtnGoLive.setAttribute('rel', 'noopener');
+  projectBtnSeeSrc.style.textDecoration = 'none';
+  projectBtnGoLive.style.textDecoration = 'none';
   projectWindowWrapper.id = 'projectWindow';
   projectWindowHeader
     .querySelector('img')
