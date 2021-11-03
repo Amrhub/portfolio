@@ -571,8 +571,7 @@ body {
     order: -1;
   }
 
-  .p2 .project-picture,
-  .p4 .project-picture {
+  .project:nth-of-type(2n) .project-picture {
     order: 1;
   }
 

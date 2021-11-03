@@ -5,7 +5,7 @@ const projects = [
     name: 'Microverse Program',
     description:
       'A program to get you started on Full-Stack web development with Technical and Soft skills required, This program create positive changes on their alumni, You can join the course wherever you are.',
-    featuredImageSource: 'images/project1.png',
+    featuredImageSource: 'images/projectsScreenshot/project1.png',
     featuredImageAlt: 'Project image',
     technology: ['CSS', 'HTML', 'JavaScript'],
     demoLive:
@@ -14,24 +14,24 @@ const projects = [
       'https://github.com/Amrhub/Module1-Capstone-Web-development-course',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Awesome Books',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    featuredImageSource: 'images/ImgPlaceholder.png',
+      'A website where you can save your favorite books adding by title and author name also could be treated as a wish to read list',
+    featuredImageSource: 'images/projectsScreenshot/project2.png',
     featuredImageAlt: 'Project image',
-    technology: ['css', 'html', 'bootstrap', 'Ruby'],
-    demoLive: '',
-    sourceLink: 'https://github.com/Amrhub/myPortfolio',
+    technology: ['css', 'html', 'JavaScript'],
+    demoLive: 'https://amrhub.github.io/Awesome-Books/',
+    sourceLink: 'https://github.com/Amrhub/Awesome-Books',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Simple to do list',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    featuredImageSource: 'images/ImgPlaceholder.png',
+      'this webpage allow you to add, edit, and remove specific task or all completed tasks all in one place',
+    featuredImageSource: 'images/projectsScreenshot/project3.png',
     featuredImageAlt: 'Project image',
-    technology: ['css', 'html', 'bootstrap', 'Ruby'],
-    demoLive: '',
-    sourceLink: 'https://github.com/Amrhub/myPortfolio',
+    technology: ['css', 'html', 'JavaScript'],
+    demoLive: 'https://amrhub.github.io/To-Do-list/dist/',
+    sourceLink: 'https://github.com/Amrhub/To-Do-list/',
   },
   {
     name: 'Multi-Post Stories',
