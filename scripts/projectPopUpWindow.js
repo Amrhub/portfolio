@@ -16,7 +16,7 @@ const projects = [
   {
     name: 'Awesome Books',
     description:
-      'A website where you can save your favorite books adding by title and author name also could be treated as a wish to read list',
+      "A website where you can save your favorite books, you can add books by entering the book title and it's author also you could remove a book from the list",
     featuredImageSource: 'images/projectsScreenshot/project2.png',
     featuredImageAlt: 'Project image',
     technology: ['css', 'html', 'JavaScript'],
@@ -26,7 +26,7 @@ const projects = [
   {
     name: 'Simple to do list',
     description:
-      'this webpage allow you to add, edit, and remove specific task or all completed tasks all in one place',
+      "this webpage allows you to manage your todo list, you could add a task mark it as completed when it's done also you could edit it, remove a specific task, and could remove all completed tasks",
     featuredImageSource: 'images/projectsScreenshot/project3.png',
     featuredImageAlt: 'Project image',
     technology: ['css', 'html', 'JavaScript'],
