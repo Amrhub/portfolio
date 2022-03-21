@@ -8,10 +8,8 @@ const projects = [
     featuredImageSource: 'images/projectsScreenshot/project1.png',
     featuredImageAlt: 'Project image',
     technology: ['CSS', 'HTML', 'JavaScript'],
-    demoLive:
-      'https://amrhub.github.io/Module1-Capstone-Web-development-course/',
-    sourceLink:
-      'https://github.com/Amrhub/Module1-Capstone-Web-development-course',
+    demoLive: 'https://amrhub.github.io/Module1-Capstone-Web-development-course/',
+    sourceLink: 'https://github.com/Amrhub/Module1-Capstone-Web-development-course',
   },
   {
     name: 'Awesome Books',
@@ -51,34 +49,17 @@ workContainer.style.gridTemplateRows = `80px repeat(${projects.length},fr)`;
 // eslint-disable-next-line no-unused-vars
 function hideProject(prevProject) {
   document.getElementById('projectWindow').remove();
-  prevProject.querySelector('.project-picture').style.filter = 'blur(0)';
-  document.querySelector('.header-container').style.filter = 'blur(0)';
-  prevProject.querySelector('.project-body').style.filter = 'blur(0)';
-  if (prevProject.nextSibling) {
-    prevProject.nextSibling.querySelector('.project-picture').style.filter =
-      'blur(0)';
-  }
+  document.querySelector('body').style.overflow = 'auto';
 }
 
 // eslint-disable-next-line no-unused-vars
 function displayProject(projectIndex) {
-  const prevWindow = document.getElementById('projectWindow');
-  if (prevWindow) {
-    prevWindow.parentElement.querySelector('.project-picture').style.filter =
-      'blur(0)';
-    prevWindow.parentElement.querySelector('.project-body').style.filter =
-      'blur(0)';
-    if (prevWindow.parentElement.nextSibling) {
-      prevWindow.parentElement.nextSibling.querySelector(
-        '.project-picture'
-      ).style.filter = 'blur(0)';
-    }
-    prevWindow.remove();
-  }
+  const body = document.querySelector('body');
 
   // eslint-disable-next-line vars-on-top
   // eslint-disable-next-line prefer-const
-  let screen = window.matchMedia('(min-width: 1024px)');
+  body.style.overflow = 'hidden';
+  const screen = window.matchMedia('(min-width: 1024px)');
   const projectWindowWrapper = document.createElement('main');
   const projectWindow = document.createElement('section');
   const projectWindowHeader = document.createElement('header');
@@ -89,21 +70,16 @@ function displayProject(projectIndex) {
   const projectBtnSeeSrc = document.createElement('a');
   const projectBtnWrapper = document.createElement('div');
   const currentProject = document.getElementById(`p${projectIndex + 1}`);
-  const projectTechnologies = currentProject.querySelector(
-    '.project-body .technologies'
-  );
+  const projectTechnologies = currentProject.querySelector('.project-body .technologies');
   function mediaQuery(screen) {
-    const headerContainer = document.querySelector('.header-container');
+    projectWindowWrapper.style.backgroundColor = '#100F45';
+    projectWindowWrapper.style.backgroundImage = "url('images/headline_section_bg.svg')";
     if (screen.matches) {
-      headerContainer.style.filter = 'blur(12px)';
-      projectWindowWrapper.style.backgroundColor = '#100F45';
-      projectWindowWrapper.style.backgroundImage =
-        "url('images/headline_section_bg.svg')";
       projectWindowWrapper.style.backgroundRepeat = 'no-repeat';
       projectWindowWrapper.style.backgroundSize = ' 100% 100%';
       projectWindowWrapper.style.width = '100%';
-      projectWindowWrapper.style.height = 'max-content';
-      projectWindowWrapper.style.padding = '3% 10% 3%';
+      projectWindowWrapper.style.height = '100vh';
+      projectWindowWrapper.style.padding = '0';
       projectDescription.style.maxWidth = '700px';
       imageContainer.style.maxWidth = '1108px';
       imageContainer.style.height = '405px';
@@ -111,9 +87,6 @@ function displayProject(projectIndex) {
       projectWindowHeader.style.marginBottom = '20px';
       projectBtnWrapper.style.flexDirection = 'row';
     } else {
-      headerContainer.style.filter = 'blur(0)';
-      projectWindowWrapper.style.backgroundColor = 'transparent';
-      projectWindowWrapper.style.backgroundImage = 'none';
       projectWindowWrapper.style.padding = '0';
       projectDescription.style.maxWidth = 'unset';
       projectWindowHeader.style.width = '100%';
@@ -123,12 +96,6 @@ function displayProject(projectIndex) {
     }
   }
 
-  currentProject.querySelector('.project-picture').style.filter = 'blur(12px)';
-  currentProject.querySelector('.project-body').style.filter = 'blur(12px)';
-  if (currentProject.nextSibling) {
-    currentProject.nextSibling.querySelector('.project-picture').style.filter =
-      'blur(12px)';
-  }
   projectWindowHeader.innerHTML = `<h1>${projects[projectIndex].name}</h1><img src="images/Toolbar.png" alt="cancel button" onmouseover="" style="cursor: pointer;">`;
   imageContainer.src = `${projects[projectIndex].featuredImageSource}`;
   imageContainer.alt = `${projects[projectIndex].featuredImageAlt}`;
@@ -142,9 +109,9 @@ function displayProject(projectIndex) {
     'See Source <img src="images/Icons/GitHub-icon.png" alt="external link icon">';
   projectBtnSeeSrc.href = `${projects[projectIndex].sourceLink}`;
   projectBtnSeeSrc.setAttribute('target', '_blank');
-  projectBtnSeeSrc.setAttribute('rel', 'noopener');
+  projectBtnSeeSrc.setAttribute('rel', 'noopener noreferrer');
   projectBtnGoLive.setAttribute('target', '_blank');
-  projectBtnGoLive.setAttribute('rel', 'noopener');
+  projectBtnGoLive.setAttribute('rel', 'noopener noreferrer');
   projectBtnSeeSrc.style.textDecoration = 'none';
   projectBtnGoLive.style.textDecoration = 'none';
   projectWindowWrapper.id = 'projectWindow';
@@ -152,18 +119,18 @@ function displayProject(projectIndex) {
     .querySelector('img')
     .setAttribute('onClick', `hideProject(p${projectIndex + 1})`);
 
-  projectWindow.style.backgroundColor = 'rgba(255, 255, 255, 0.16)';
+  projectWindow.style.backgroundColor = 'inherit';
   projectWindow.style.border = '1px solid #FFFFFF';
   projectWindow.style.boxShadow = '0px 48px 48px rgba(37, 47, 137, 0.08)';
   projectWindow.style.padding = '2rem';
-  projectWindowWrapper.style.margin = '1rem 24px 24px';
-  projectWindowWrapper.style.position = 'absolute';
+  projectWindowWrapper.style.position = 'fixed';
   projectWindowWrapper.style.zIndex = '999999';
   projectWindowWrapper.style.display = 'flex';
   projectWindowWrapper.style.justifyContent = 'center';
+  projectWindowWrapper.style.alignItems = 'center';
   projectWindowWrapper.style.top = '0';
-  projectWindowWrapper.style.height = '90vh';
-  projectWindowWrapper.style.width = '90%';
+  projectWindowWrapper.style.height = '100vh';
+  projectWindowWrapper.style.backgroundImage = 'none';
   projectWindow.style.width = '90%';
   projectWindow.style.height = 'max-content';
   projectWindow.style.display = 'flex';
@@ -287,9 +254,7 @@ function createProjectStructure(projNo) {
 
 function projectInit(projValues, projNo) {
   const projectContainer = document.getElementById(`p${projNo}`);
-  const projectPictureImage = projectContainer.querySelector(
-    '.project-picture img'
-  );
+  const projectPictureImage = projectContainer.querySelector('.project-picture img');
   const projectTitle = projectContainer.querySelector('.Project-title');
   const projectDescription = projectContainer.querySelector('.project-body p');
   const projectTechnologies = projectContainer.querySelector('.technologies');

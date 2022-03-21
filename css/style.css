@@ -16,6 +16,11 @@
   --containers-side-padding: 30px;
 }
 
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -49,19 +54,21 @@ body {
 
 .linksWrapper {
   display: none;
-  position: absolute;
-  height: 800px;
+  position: fixed;
+  z-index: 99;
+  height: 100vh;
   width: 100%;
   left: 0;
   top: 0;
   background-color: #191765;
-  background-image: url("../images/mobile-menu-bg.png");
-  padding: 2.5rem;
+  background-image: url('../images/mobile-menu-bg.png');
+  background-size: cover;
+  padding: 2rem 3rem;
 }
 
 .linksWrapper img {
   float: right;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .linksWrapper ul {
@@ -71,7 +78,7 @@ body {
 }
 
 .linksWrapper ul li {
-  margin: 0 0 2rem;
+  margin-bottom: 2rem;
 }
 
 .linksWrapper a {
@@ -96,6 +103,7 @@ body {
 .wrapper {
   display: grid;
   grid-template: auto 150px auto auto/ 100%;
+  padding-top: 25px;
 }
 
 .portfolio {
@@ -196,6 +204,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 var(--containers-side-padding);
+}
+
+.guider_link {
+  color: white;
+  text-decoration: none;
 }
 
 .links {
@@ -521,6 +534,7 @@ body {
 @media screen and (min-width: 1024px) {
   .work-container {
     grid-gap: 5rem;
+    padding-top: 65px;
   }
 
   .header-container {
