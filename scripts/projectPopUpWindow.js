@@ -22,6 +22,17 @@ const projects = [
     sourceLink: 'https://github.com/Amrhub/blog-app/blob/dev/README.md',
   },
   {
+    name: 'GitRecipe',
+    description:
+      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+    featuredImageSource:
+      'https://raw.githubusercontent.com/Amrhub/dish-recipes/dev/app_screenshot.png',
+    featuredImageAlt: 'Project image',
+    technology: ['Ruby on Rails', 'Bootstrap_forms', 'Bootstrap', 'cocoon'],
+    demoLive: 'https://gitrecipe.herokuapp.com/',
+    sourceLink: 'https://github.com/Amrhub/blog-app/blob/dev/README.md',
+  },
+  {
     name: 'Microverse Program',
     description:
       'A program to get you started on Full-Stack web development with Technical and Soft skills required, This program create positive changes on their alumni, You can join the course wherever you are.',
