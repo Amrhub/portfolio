@@ -1,6 +1,15 @@
-/* eslint-disable operator-linebreak */
-/* eslint-disable comma-dangle */
 const projects = [
+  {
+    name: 'MedBook',
+    description:
+      'Website that allows user to book with doctors, also allow user to add doctor to their list of doctors, and allow user to view their bookings. Authentication for this website is just by username',
+    featuredImageSource:
+      'https://user-images.githubusercontent.com/87689547/162473098-14c0c8fb-066c-4f94-86a7-f18f21b97958.png',
+    featuredImageAlt: 'Project image',
+    technology: ['Ruby on Rails', 'React', 'Tailwind'],
+    demoLive: 'https://amrhub.github.io/Module1-Capstone-Web-development-course/',
+    sourceLink: 'https://github.com/Amrhub/Module1-Capstone-Web-development-course',
+  },
   {
     name: 'Microverse Program',
     description:
@@ -47,7 +56,7 @@ const workContainer = document.getElementById('portfolio');
 workContainer.style.gridTemplateRows = `80px repeat(${projects.length},fr)`;
 
 // eslint-disable-next-line no-unused-vars
-function hideProject(prevProject) {
+function hideProject() {
   document.getElementById('projectWindow').remove();
   document.querySelector('body').style.overflow = 'auto';
 }
@@ -56,8 +65,6 @@ function hideProject(prevProject) {
 function displayProject(projectIndex) {
   const body = document.querySelector('body');
 
-  // eslint-disable-next-line vars-on-top
-  // eslint-disable-next-line prefer-const
   body.style.overflow = 'hidden';
   const screen = window.matchMedia('(min-width: 1024px)');
   const projectWindowWrapper = document.createElement('main');
@@ -102,11 +109,9 @@ function displayProject(projectIndex) {
   projectDescription.textContent = `${projects[projectIndex].description}`;
   projectTechnology.innerHTML = `${projectTechnologies.innerHTML}`;
   const projectTechnologyItems = Array.from(projectTechnology.children);
-  projectBtnGoLive.innerHTML =
-    'See Live <img src="images/Icons/see-live.png" alt="external link icon">';
+  projectBtnGoLive.innerHTML = 'See Live <img src="images/Icons/see-live.png" alt="external link icon">';
   projectBtnGoLive.href = `${projects[projectIndex].demoLive}`;
-  projectBtnSeeSrc.innerHTML =
-    'See Source <img src="images/Icons/GitHub-icon.png" alt="external link icon">';
+  projectBtnSeeSrc.innerHTML = 'See Source <img src="images/Icons/GitHub-icon.png" alt="external link icon">';
   projectBtnSeeSrc.href = `${projects[projectIndex].sourceLink}`;
   projectBtnSeeSrc.setAttribute('target', '_blank');
   projectBtnSeeSrc.setAttribute('rel', 'noopener noreferrer');
@@ -212,7 +217,7 @@ function displayProject(projectIndex) {
   currentProject.appendChild(projectWindowWrapper);
   currentProject.insertBefore(
     projectWindowWrapper,
-    currentProject.querySelector('.header-container')
+    currentProject.querySelector('.header-container'),
   );
 
   mediaQuery(screen);
