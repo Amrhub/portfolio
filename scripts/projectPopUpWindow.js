@@ -148,7 +148,6 @@ function displayProject(projectIndex) {
   projectWindowWrapper.style.top = '0';
   projectWindowWrapper.style.height = '100vh';
   projectWindowWrapper.style.backgroundImage = 'none';
-  projectWindow.style.width = '90%';
   projectWindow.style.height = 'max-content';
   projectWindow.style.display = 'flex';
   projectWindow.style.flexDirection = 'column';
