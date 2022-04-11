@@ -6,18 +6,18 @@ const projects = [
     featuredImageSource:
       'https://user-images.githubusercontent.com/87689547/162473098-14c0c8fb-066c-4f94-86a7-f18f21b97958.png',
     featuredImageAlt: 'Project image',
-    technology: ['Ruby on Rails', 'React', 'Tailwind'],
+    technology: ['Rails', 'React', 'Tailwind'],
     demoLive: 'https://your-medbook.herokuapp.com/',
     sourceLink: 'https://github.com/codepantha/medbook',
   },
   {
     name: 'GitBlogie',
     description:
-      'This application allows you to post your blog like and comments other blogs sign up and sign in to have more previlages',
+      'This application allows you to post your blog like and comments other blogs sign up and sign in to have more privileges',
     featuredImageSource:
       'https://user-images.githubusercontent.com/87689547/162636896-028ef2d8-532d-4629-840e-74eb9433c415.png',
     featuredImageAlt: 'Project image',
-    technology: ['Ruby on Rails', 'Bootstrap_forms', 'Bootstrap'],
+    technology: ['Rails', 'Bootstrap'],
     demoLive: 'https://gitblogie.herokuapp.com/',
     sourceLink: 'https://github.com/Amrhub/blog-app/blob/dev/README.md',
   },
@@ -28,7 +28,7 @@ const projects = [
     featuredImageSource:
       'https://raw.githubusercontent.com/Amrhub/dish-recipes/dev/app_screenshot.png',
     featuredImageAlt: 'Project image',
-    technology: ['Ruby on Rails', 'Bootstrap_forms', 'Bootstrap', 'cocoon'],
+    technology: ['Rails', 'Bootstrap', 'cocoon'],
     demoLive: 'https://gitrecipe.herokuapp.com/',
     sourceLink: 'https://github.com/Amrhub/blog-app/blob/dev/README.md',
   },
@@ -232,7 +232,7 @@ function displayProject(projectIndex) {
   );
 
   mediaQuery(screen);
-  screen.addListener(mediaQuery);
+  screen.addEventListener(mediaQuery);
 }
 
 function createProjectStructure(projNo) {

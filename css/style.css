@@ -331,6 +331,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .project-body > * {
@@ -338,14 +339,11 @@ body {
 }
 
 .project .Project-title {
-  justify-self: center;
-  margin: 15px 0;
-  padding: 0;
+  margin: 15px 0 0;
   font-size: 32px;
   line-height: 44px;
   color: white;
   font-weight: 500;
-  text-align: center;
 }
 
 .project p {
@@ -355,15 +353,15 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #dcdce8;
-  text-align: center;
 }
 
 .technologies {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   height: 40px;
-  margin: 20px 0;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .Contact-us__Form fieldset > * {
@@ -377,8 +375,8 @@ body {
 }
 
 .project .technologies > * {
-  flex-grow: 1;
   text-align: center;
+  padding-inline: 12px;
   border-right: 1px #555 solid;
 }
 
@@ -394,8 +392,8 @@ body {
   width: 100px;
   height: 50px;
   padding: 10px 10px;
-  background: #9390ff;
-  color: black;
+  background-color: #7d73fc;
+  color: #edecff;
   align-self: flex-start;
   transition: transform 300ms ease-in;
 }
@@ -423,7 +421,7 @@ body {
   grid-row: 4 / 5;
   width: 100%;
   margin-top: 120px;
-  margin-bottom: 71px;
+  margin-bottom: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -621,7 +619,7 @@ body {
   .project-body .technologies {
     width: 50%;
     align-self: flex-start;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   .See-Project {
@@ -633,6 +631,10 @@ body {
     flex-direction: row;
     justify-content: space-around;
     width: 500px;
+  }
+
+  .footer {
+    margin-bottom: 0;
   }
 }
 
