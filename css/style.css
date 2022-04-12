@@ -600,6 +600,11 @@ body {
     margin: 0;
   }
 
+  .mobile_project img {
+    max-height: 400px;
+    object-fit: contain;
+  }
+
   .project h3 {
     margin: 0;
   }
@@ -607,7 +612,7 @@ body {
   .project-body {
     width: 45%;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 30px;
     height: 100%;
   }
 

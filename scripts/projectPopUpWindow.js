@@ -8,6 +8,7 @@ const projects = [
     featuredImageAlt: 'Project image',
     technology: ['Rails', 'React', 'Tailwind'],
     demoLive: 'https://your-medbook.herokuapp.com/',
+
     sourceLink: 'https://github.com/codepantha/medbook',
   },
   {
@@ -15,11 +16,12 @@ const projects = [
     description:
       'a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
     featuredImageSource:
-      'https://raw.githubusercontent.com/Amrhub/Budgetly/dev/project_snapshots/categories.png',
+      'https://user-images.githubusercontent.com/87689547/163049550-59afe617-17a5-469e-84e0-d8561569e8ed.png',
     featuredImageAlt: 'Project image',
     technology: ['Rails', 'Bootstrap 5', 'Devise'],
     demoLive: 'https://yourbudgetly.herokuapp.com/',
     sourceLink: 'https://github.com/Amrhub/Budgetly',
+    extraClass: 'mobile_project',
   },
   {
     name: 'GitBlogie',
@@ -30,6 +32,7 @@ const projects = [
     featuredImageAlt: 'Project image',
     technology: ['Rails', 'Bootstrap'],
     demoLive: 'https://gitblogie.herokuapp.com/',
+
     sourceLink: 'https://github.com/Amrhub/blog-app/blob/dev',
   },
   {
@@ -59,7 +62,7 @@ const projects = [
     description:
       'This is a mobile app that allows you to search by date and get all stats of each country (today confirmed, open, deaths,and recovered cases), you could also search by country name with a certain date to get all country stats and regions stats (if exists). These stats are based on since Jan. 23rd, 2020 till that chosen date',
     featuredImageSource:
-      'https://raw.githubusercontent.com/Amrhub/COVID19-tracker/master/app_screenshots/app_screenshot.png',
+      'https://user-images.githubusercontent.com/87689547/163050012-03f63ce4-8918-4fbd-b47b-09e42de54d32.png',
     featuredImageAlt: 'Project image',
     technology: ['React', 'Redux', 'Narrativa API'],
     demoLive: 'https://covid-19-tracker-amrhub.netlify.app/',
@@ -321,10 +324,10 @@ function createProjectStructure(projNo) {
   const projectTechnologies = document.createElement('ul');
   const projectBtnWrapper = document.createElement('div');
   const projectBtn = document.createElement('button');
+  const projectExtraClasses = projects[projNo - 1].extraClass || '';
 
   projectBtn.textContent = 'See Project';
-
-  projectContainer.className = `project p${projNo}`;
+  projectContainer.className = `project p${projNo} ${projectExtraClasses}`;
   projectContainer.id = `p${projNo}`;
   projectPicture.className = 'project-picture';
   projectBody.className = 'project-body';
