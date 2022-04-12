@@ -362,6 +362,7 @@ body {
   height: 40px;
   list-style: none;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .Contact-us__Form fieldset > * {
@@ -653,5 +654,18 @@ body {
 
   .work-container .Section-title {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-window {
+    width: 95%;
+    height: 90% !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .project-window > img {
+    height: 400px !important;
   }
 }

@@ -172,6 +172,7 @@ function displayProject(projectIndex) {
   function mediaQuery(screen) {
     projectWindowWrapper.style.backgroundColor = '#100F45';
     projectWindowWrapper.style.backgroundImage = "url('images/headline_section_bg.svg')";
+    projectWindow.classList.add('project-window');
     if (screen.matches) {
       projectWindowWrapper.style.backgroundRepeat = 'no-repeat';
       projectWindowWrapper.style.backgroundSize = ' 100% 100%';
