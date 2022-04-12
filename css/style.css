@@ -617,7 +617,6 @@ body {
   }
 
   .project-body .technologies {
-    width: 50%;
     align-self: flex-start;
     text-transform: uppercase;
   }

@@ -11,6 +11,17 @@ const projects = [
     sourceLink: 'https://github.com/codepantha/medbook',
   },
   {
+    name: 'Budgetly',
+    description:
+      'a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    featuredImageSource:
+      'https://raw.githubusercontent.com/Amrhub/Budgetly/dev/project_snapshots/categories.png',
+    featuredImageAlt: 'Project image',
+    technology: ['Rails', 'Bootstrap 5', 'Devise'],
+    demoLive: 'https://yourbudgetly.herokuapp.com/',
+    sourceLink: 'https://github.com/Amrhub/Budgetly',
+  },
+  {
     name: 'GitBlogie',
     description:
       'This application allows you to post your blog like and comments other blogs sign up and sign in to have more privileges',
@@ -19,7 +30,7 @@ const projects = [
     featuredImageAlt: 'Project image',
     technology: ['Rails', 'Bootstrap'],
     demoLive: 'https://gitblogie.herokuapp.com/',
-    sourceLink: 'https://github.com/Amrhub/blog-app/blob/dev/README.md',
+    sourceLink: 'https://github.com/Amrhub/blog-app/blob/dev',
   },
   {
     name: 'GitRecipe',
@@ -30,7 +41,72 @@ const projects = [
     featuredImageAlt: 'Project image',
     technology: ['Rails', 'Bootstrap', 'cocoon'],
     demoLive: 'https://gitrecipe.herokuapp.com/',
-    sourceLink: 'https://github.com/Amrhub/blog-app/blob/dev/README.md',
+    sourceLink: 'https://github.com/Amrhub/dish-recipes',
+  },
+  {
+    name: "Space Travelers' Hub",
+    description:
+      'Single-page application that displays SpaceX rockets and missions, allows you to book a rocket or join a mission and see all your booked rockets and your joined mission in your profile page',
+    featuredImageSource:
+      'https://raw.githubusercontent.com/Amrhub/space-travelers-hub/dev/app_screenshot.png',
+    featuredImageAlt: 'Project image',
+    technology: ['React', 'Redux', 'SpaceX API'],
+    demoLive: 'https://space-travelers-hub-pa.netlify.app/',
+    sourceLink: 'https://github.com/Amrhub/space-travelers-hub',
+  },
+  {
+    name: 'Covid19-tracker',
+    description:
+      'This is a mobile app that allows you to search by date and get all stats of each country (today confirmed, open, deaths,and recovered cases), you could also search by country name with a certain date to get all country stats and regions stats (if exists). These stats are based on since Jan. 23rd, 2020 till that chosen date',
+    featuredImageSource:
+      'https://raw.githubusercontent.com/Amrhub/COVID19-tracker/master/app_screenshots/app_screenshot.png',
+    featuredImageAlt: 'Project image',
+    technology: ['React', 'Redux', 'Narrativa API'],
+    demoLive: 'https://covid-19-tracker-amrhub.netlify.app/',
+    sourceLink: 'https://github.com/Amrhub/COVID19-tracker',
+  },
+  {
+    name: 'Bookstore',
+    description:
+      'Book store allows you to save your progress work on reading your favorite books, you could also have a list of books at once :)',
+    featuredImageSource:
+      'https://raw.githubusercontent.com/Amrhub/Bookstore/development/app_screenshot.png',
+    featuredImageAlt: 'Project image',
+    technology: ['React', 'Redux', 'Bookstore API'],
+    demoLive: 'https://bookstore-react-app.netlify.app/',
+    sourceLink: 'https://github.com/Amrhub/Bookstore',
+  },
+  {
+    name: 'Math Magicians',
+    description:
+      'This is just a simple calculator user interface that I built using the React framework.',
+    featuredImageSource:
+      'https://raw.githubusercontent.com/Amrhub/math-magicians/development/app_screenshot.png',
+    featuredImageAlt: 'Project image',
+    technology: ['React', 'Jest'],
+    demoLive: 'https://math-magician-react.netlify.app/',
+    sourceLink: 'https://github.com/Amrhub/math-magicians',
+  },
+  {
+    name: 'TODO list',
+    description:
+      'In this app, you can add, delete, submit and edit items. To edit items, simply double click on it. Once you are done, press the enter key to resubmit. This app will persist your data in the browser local storage. So whether you reload, close your app or reopened it, you still have access to your to-dos items.',
+    featuredImageSource:
+      'https://raw.githubusercontent.com/Amrhub/react-todo-app/development/app_screenshot.png',
+    featuredImageAlt: 'Project image',
+    technology: ['React'],
+    demoLive: 'https://amrhub.github.io/react-todo-app/',
+    sourceLink: 'https://github.com/Amrhub/react-todo-app',
+  },
+  {
+    name: 'Leaderboard',
+    description: 'This project allows you to add to a leaderboard for your chess world cup 2021.',
+    featuredImageSource:
+      'https://raw.githubusercontent.com/Amrhub/Leaderboard/dev/app_screenshot.png',
+    featuredImageAlt: 'Project image',
+    technology: ['React', 'API'],
+    demoLive: 'https://amrhub.github.io/Leaderboard/',
+    sourceLink: 'https://github.com/Amrhub/Leaderboard',
   },
   {
     name: 'Microverse Program',
