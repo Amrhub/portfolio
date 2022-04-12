@@ -14,14 +14,12 @@ form.addEventListener('submit', (e) => {
   form.elements[3].className = 'valid';
   // VALIDATION CHECK
   if (fullNameTest.length === 1) {
-    fullNameError.textContent =
-      'Enter your FULL name separated with whitespace';
+    fullNameError.textContent = 'Enter your FULL name separated with whitespace';
     fullName.className = 'invalid';
   } else {
     for (let i = 0; i < fullNameTest.length; i += 1) {
       if (numRegex.test(fullNameTest[i])) {
-        fullNameError.textContent =
-          'Name field must consists of alphabets and space only';
+        fullNameError.textContent = 'Name field must consists of alphabets and space only';
         fullName.className = 'invalid';
         break;
       } else {
@@ -52,6 +50,7 @@ form.addEventListener('submit', (e) => {
       fullNameError.style.display = 'block';
     }
   } else {
+    localStorage.removeItem('form');
     e.submit();
   }
 });

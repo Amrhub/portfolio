@@ -1,5 +1,4 @@
 (() => {
-  const form = document.getElementById('fs-frm');
   const fullName = document.getElementById('full-name');
   const email = document.getElementById('email-address');
   const textArea = document.getElementById('message');
@@ -25,10 +24,5 @@
     storeValue('fullName', fullName);
     storeValue('email', email);
     storeValue('textArea', textArea);
-  };
-
-  form.onsubmit = () => {
-    localStorage.removeItem('form');
-    form.reset();
   };
 })();
